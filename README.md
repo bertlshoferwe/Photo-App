@@ -43,23 +43,17 @@ Choose AWS Credentials and enter your Access Key and Secret Key.
 Use these credentials in your pipeline for AWS authentication.
 Infrastructure Deployment with Terraform
 1. Initialize Terraform
-bash
-Copy
-Edit
+
 terraform init
 2. Review Terraform Plan
 Before applying, review the changes that Terraform will make:
 
-bash
-Copy
-Edit
+
 terraform plan
 3. Apply Terraform Configuration
 Deploy the infrastructure (S3, Lambda, DynamoDB, Rekognition, etc.):
 
-bash
-Copy
-Edit
+
 terraform apply -auto-approve
 Jenkins CI/CD Pipeline
 1. Set Up the Jenkins Pipeline
@@ -67,9 +61,7 @@ Go to Jenkins Dashboard.
 Click New Item, select Pipeline, and give it a name, e.g., photo-app-pipeline.
 In the Pipeline Script section, define the pipeline script. You can either copy it into the Jenkinsfile in the root of your repository or configure it directly in Jenkins.
 2. Pipeline Script
-groovy
-Copy
-Edit
+
 pipeline {
     agent any
 
